@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_weight="4"
+    >
+
+    <EditText android:layout_height="wrap_content"
+        android:id="@+id/In"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:inputType="textMultiLine"
+        android:text="Input">
+    </EditText>
+
+
+    <EditText android:layout_height="wrap_content"
+        android:id="@+id/Pass"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:inputType="textMultiLine"
+        android:text="Password">
+    </EditText>
+
+
+    <Button
+        android:layout_weight="1"
+        android:id="@+id/GO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ENCRYPT"
+        android:layout_gravity="center"
+        />
+
+    <EditText android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/Out"
+        android:layout_weight="1"
+        android:inputType="textMultiLine"
+        android:text="Output">
+    </EditText>
+
+
+</LinearLayout>

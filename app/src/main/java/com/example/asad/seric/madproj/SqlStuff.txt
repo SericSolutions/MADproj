@@ -1,0 +1,23 @@
+Create table Users(
+  UserId integer Primary key,
+  Name TEXT,
+  Password TEXT
+);
+
+Create table Notes(
+  NoteID integer Primary key,
+  NoteTitle TEXT,
+  NoteBody TEXT,
+  UserId integer,
+  FOREIGN KEY(UserId) REFERENCES Users(UserId)
+  );
+
+Create table Passwords(
+  SiteId integer Primary key,
+  SiteName TEXT,
+  SiteUsername TEXT,
+  SitePassword TEXT,
+  UserId integer,
+  FOREIGN KEY(UserId) REFERENCES Users(UserId)
+  );
+
