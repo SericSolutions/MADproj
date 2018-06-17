@@ -15,25 +15,25 @@
         android:layout_weight="1"
         android:padding="10dp"
         >
-    <android.support.v7.widget.CardView
-        xmlns:card_view="http://schemas.android.com/apk/res-auto"
-        android:id="@+id/card_view"
-        android:layout_gravity="center"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        card_view:cardCornerRadius="4dp"
-        >
-
-        <EditText
-            android:id="@+id/In"
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view"
+            android:layout_gravity="center"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:hint="Enter Text Here!"
-            android:textAlignment="center"
-            android:textSize="30dp"
-            />
-    </android.support.v7.widget.CardView>
-</LinearLayout>
+            card_view:cardCornerRadius="4dp"
+            >
+
+            <TextView
+                android:id="@+id/In"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Tap To Paste Data"
+                android:textSize="30dp"
+                android:textAlignment="center"
+                />
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
@@ -57,9 +57,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:textSize="30dp"
-                android:textAlignment="center"
                 android:inputType="textPassword"
-
+                android:textAlignment="center"
                 />
         </android.support.v7.widget.CardView>
     </LinearLayout>
@@ -69,7 +68,7 @@
         android:id="@+id/GO"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ENCRYPT"
+        android:text="DECRYPT"
         android:layout_gravity="center"
         />
 
@@ -90,11 +89,12 @@
             >
 
             <TextView
-                android:hint="Encrypted Output Comes Out Here"
+                android:hint="Decrypted Output Comes Out Here"
                 android:id="@+id/Out"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:textSize="30dp"
+                android:layout_gravity="center"
                 android:textAlignment="center"
                 />
         </android.support.v7.widget.CardView>

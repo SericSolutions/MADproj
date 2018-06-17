@@ -82,7 +82,7 @@ public class SQLiteHelper extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor res = db.query("Users",
                 new String[] {"Password"},
-                "Name = '?'",
+                "UserId = ?",
                 new String[] {user},
                 null,
                 null,
@@ -129,7 +129,7 @@ public class SQLiteHelper extends SQLiteOpenHelper {
 
         ContentValues contentValues = new ContentValues();
         contentValues.put("UserId", userId);
-        contentValues.put("Site", site);
+        contentValues.put("SiteName", site);
         contentValues.put("SiteUsername", username);
         contentValues.put("SitePassword", password);
 
